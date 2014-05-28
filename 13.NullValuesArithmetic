@@ -1,0 +1,19 @@
+using System;
+/* Create a program that assigns null values to anInteger and to a double variable. 
+ * Try to print these variables at the console. 
+ * Try to add some number or the null literal to these variables and print the result. */
+class NullValuesArithmetic
+{
+    static void Main()
+    {
+       int? integerNull = null;
+        double? doubleNull = null;
+        Console.WriteLine("An integer with value \"null\": {0}\nA floating point number with value \"null\": {1}", integerNull, doubleNull);
+        Console.WriteLine("An integer with value \"null\" plus a number: {0}\nA floating point number with value \"null\" plus number: {1}",
+                            (integerNull + 5), (doubleNull + 0.7));
+        integerNull = 1;
+        doubleNull = 2.56;
+        Console.WriteLine("An integer with value \"null\" after assigned a number: {0}\nA floating point number with value \"null\" after assigned a number: {1}",
+                           integerNull, doubleNull);   
+    }
+}
