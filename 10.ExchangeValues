@@ -1,0 +1,18 @@
+using System;
+/* Declare two integer variables a and b and assign them with 5 and 10 and after that exchange their values. 
+ * Print the variable values before and after the exchange. */
+class ExchangeVariableValues
+{
+    static void Main()
+    {
+        int a = 5;
+        int b = 10;
+        int bufferVarible = 0;
+        Console.WriteLine("Before the exchange: a = {0} b = {1}", a, b);
+
+        bufferVarible = a;
+        a = b;
+        b = bufferVarible;
+        Console.WriteLine("After the exchange: a = {0} b = {1}", a, b);
+    }
+}
