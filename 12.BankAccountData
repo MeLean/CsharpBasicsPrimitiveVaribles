@@ -1,0 +1,22 @@
+using System;
+/* A bank account has a holder name (first name, middle name and last name), 
+ * available amount of money (balance), bank name, IBAN, 3 credit card numbers associated with the account. 
+ * Declare the variables needed to keep the information for a single bank account using the appropriate data types and descriptive names. */
+class BankAccountData
+{
+    static void Main()
+    {
+        string firstName = "Ivan";
+        string middleName = "Ivanov";
+        string lastName = "Ivanov";
+        decimal amount = 10000000.05m;
+        string bankName = "Burkan Bank";
+        string IBAN = "AL47212110090000000235698741";
+        string cardOneNumber = "4258 4429 1101 0505";
+        string cardTwoNumber = "4258 4429 1101 0504";
+        string cardTreeNumber = "4258 4429 1101 0503";
+
+        Console.WriteLine("{0} {1} {2} have: {3} $\nin {4} whit IBAN: {5}.\nHis credit cards are whit numbers:\n\t{6}\n\t{7}\n\t{8}", 
+                            firstName, middleName, lastName, amount, bankName, IBAN, cardOneNumber, cardTwoNumber, cardTreeNumber);
+    }
+}
